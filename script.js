@@ -81,3 +81,25 @@ function register() {
 
     window.location.href = "login.html";
 }
+document.getElementById("resumeForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const file = document.getElementById("resume").files[0];
+    const message = document.getElementById("uploadMessage");
+
+    if (file) {
+        message.style.color = "green";
+        message.innerHTML = "Resume uploaded successfully: " + file.name;
+    } else {
+        message.style.color = "red";
+        message.innerHTML = "Please select a resume.";
+    }
+});
+document.getElementById("resume").addEventListener("change", function () {
+    const file = this.files[0];
+
+    if (file) {
+        document.getElementById("uploadMessage").innerHTML =
+            "Selected File: " + file.name;
+    }
+});

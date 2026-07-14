@@ -475,3 +475,30 @@ footer h3{
 .register-card button:hover{
     background:#0d47a1;
 }
+/* Your existing CSS */
+
+/* Footer */
+footer{
+   ...
+}
+
+/* Resume Upload Section */
+.resume-upload {
+    ...
+}
+
+.resume-upload h2 {
+    ...
+}
+
+.resume-upload input[type="file"] {
+    ...
+}
+
+.resume-upload button {
+    ...
+}
+
+#uploadMessage {
+    ...
+}
